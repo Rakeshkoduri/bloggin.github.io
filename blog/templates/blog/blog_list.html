@@ -1,0 +1,41 @@
+
+{%extends 'blog/base.html' %}
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/blog_list.css">
+
+
+
+<div class="hop">
+<h1>Blog-Post</h1>
+</div>
+<div class="card">
+
+<!--    <h2 class="title">Post : {{post.name}}</h2>-->
+    <section class="hero is-bold is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Post : {{post.name}}
+                </h1>
+                <h2 class="subtitle">
+                    Product:  {{ post.product}}.
+                </h2>
+            </div>
+        </div>
+    </section><br>
+
+<!--    <h3>Product:  {{ post.product}}.</h3>-->
+<!--    <hr style="width:-20%;text-align:left;margin-right:30">-->
+
+    <p> <b>Content : </b> {{post.content}} </p> <br>
+
+    <p>Click Here : <a href="{{post.link}}" target="_blank"> {{post.link}} </a><br></p><br>
+
+    <p><b>Posted_on:</b> {{post.created}}</p>
+
+    </div>
+    <br>
+    <br>
+
+{% endblock  %}

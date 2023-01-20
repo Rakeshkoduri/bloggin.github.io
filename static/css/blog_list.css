@@ -1,0 +1,17 @@
+    .hop h1 {
+    padding:20px ;
+    text-align:justify;
+    }
+
+
+.card {
+
+  background-color: cyan;
+  text-align:justify;
+  width: 500px;
+  height:300px;
+  border: 3px solid ;
+  padding:20px 50px ;
+  margin:20px 20px;
+
+  }
